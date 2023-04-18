@@ -125,11 +125,12 @@ public class Formulario extends JFrame implements ActionListener{
 		if(e.getSource() == btnEnviar){
 			String files = "";
 			for (int i = 0; i < dlm.getSize(); i++) {
-				files = String.valueOf(dlm.getElementAt(i));
-				if(i != dlm.getSize()-1){
+				files += String.valueOf(dlm.getElementAt(i));
+				if(i < dlm.getSize()-1){
 					files += ",";
 				}
 			}
+			System.out.println(">> Files >> "  + files);
 			new SocketClienteEnviarArchivo(files);
 		}
 		if(e.getSource() == btnEliminar){

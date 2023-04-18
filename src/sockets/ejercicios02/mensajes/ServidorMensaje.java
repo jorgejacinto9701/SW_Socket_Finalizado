@@ -40,18 +40,7 @@ public class ServidorMensaje {
 				// salida.println() -> Permite enviar mensajes
 				// entrada.readLine() -> Permite recibir mensajes
 
-				// --------------------------------------------
-				// Empieza la comunicacin!!!!
-				// --------------------------------------------
 
-				//1 Se recibe el codigo
-				String codigo=entrada.readLine();
-				
-				//2 El metodo accede ala Base de datos(Nombre del vendedor)	
-				String dato = buscaUsuario(codigo);
-				 
-				//Se envia al cleinte
-				salida.println(dato);
 				
 				
 				socketCliente.close();

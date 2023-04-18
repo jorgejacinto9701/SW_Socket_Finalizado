@@ -35,7 +35,7 @@ public class SocketServerRecibirArchivosArchivo {
 				String[] nombres = cadena.split(",");
 			
 				
-				String ARCHIVO_DESTINO = "D:/_hasta/";
+				String ARCHIVO_DESTINO = "D:/_RECURSOS/servidor/";
 				
 				for (int i = 0; i < nombres.length; i++) {
 					System.out.println("EL NOMBRE DEL ARCHIVO :" + nombres[i]);
